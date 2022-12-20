@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
+    public function welcome(){
+        return view('welcome');
+    }
     public function characters(){
         return view('characters');
     }

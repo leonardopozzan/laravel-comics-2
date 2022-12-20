@@ -41,7 +41,7 @@ class HomeController extends Controller
         $newComic = new Comic;
         $newComic->title = $formData['title'];
         $newComic->description = $formData['description'];
-        $newComic->thumb = $formData['thumb'];
+        $newComic->thumb = 'https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/09/BMTJWZ_01_300-001_HD_5f5ff2307dcb37.34652945.jpg?itok=VswVjLR8';
         $newComic->price = $formData['price'];
         $newComic->series = $formData['series'];
         $newComic->sale_date = $formData['sale_date'];

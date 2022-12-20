@@ -55,19 +55,31 @@ a{
     background-size: cover;
     height: 400px;
     position: relative;
-    .title{
-        position: absolute;
-        bottom: 0px; 
-        transform: translate( 0, 50%);
-        padding: 0.8rem;
-        background-color: $blue;
-        @include myText(1rem,bold);
-    }
+    
 }
 main{
     background-color: $dark-dc;
+    
     .inner-main{
-        padding: 2rem 0;
+        padding: 3rem 0;
+        .title-section{
+            position: absolute;
+            top: -100px; left: 0;
+            transform: translate( 0, 50%);
+            padding: 0.8rem;
+            background-color: $blue;
+            @include myText(1rem,bold);
+        }
+        .link-section{
+            position: absolute;
+            top: -100px; right: 0;
+            transform: translate( 0, 50%);
+            padding: 0.8rem;
+            background-color: $blue;
+            a{
+                @include myText(1rem,bold);
+            }
+        }
         .cards{
             display: flex;
             flex-wrap: wrap;
