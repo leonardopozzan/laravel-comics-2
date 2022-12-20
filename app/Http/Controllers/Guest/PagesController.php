@@ -14,26 +14,26 @@ class PagesController extends Controller
         return view('characters');
     }
     public function movies(){
-        return view('movies');
+        return view('characters');
     }public function tv(){
-        return view('tv');
+        return view('characters');
     }
     public function games(){
-        return view('games');
+        return view('characters');
     }
     public function collectibles(){
-        return view('collectibles');
+        return view('characters');
     }
     public function videos(){
-        return view('videos');
+        return view('characters');
     }
     public function fans(){
-        return view('fans');
+        return view('characters');
     }
     public function news(){
-        return view('news');
+        return view('characters');
     }
     public function shop(){
-        return view('shop');
+        return view('characters');
     }
 }

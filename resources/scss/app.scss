@@ -22,6 +22,13 @@ a{
     text-decoration: none;
     color: black;
 }
+.welcome{
+    text-align: center;
+    margin: 80px auto;
+    padding: 2rem 4rem;
+    border: 10px solid red;
+    width: max-content;
+}
 .nav-bar{
     height: 100px;
     @include dflex('between');
@@ -368,5 +375,24 @@ main{
     }
     .icon:last-child{
         border-right: 2px solid #D8D8D8;
+    }
+}
+.my-form{
+    background-color: $dark-dc;
+    color: $white;
+    margin: 50px 0;
+    border-radius: 3rem;
+    padding: 3rem 10rem;
+    *{
+        font-size: 1.2rem;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .my-btn{
+        background-color: $blue;
+        padding: 0.5rem;
+        margin-top: 1rem;
+        color: $white;
+        border: 0;
     }
 }
