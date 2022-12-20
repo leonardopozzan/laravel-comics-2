@@ -19,7 +19,7 @@
             </div>
             <div>
                 <label for="sale_date">Data di Uscita</label>
-                <input type="text" name="sale_date" id="sale_date" placeholder="yyyy-mm-gg">
+                <input type="date" name="sale_date" id="sale_date">
             </div>
             <div>
                 <label for="type">Tipo</label>
