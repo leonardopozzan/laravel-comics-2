@@ -16,7 +16,7 @@ class HomeController extends Controller
     public function index()
     {
         $comics = Comic::all();
-        return view('welcome', compact('comics'));
+        return view('comics.index', compact('comics'));
     }
 
     /**
@@ -26,7 +26,7 @@ class HomeController extends Controller
      */
     public function create()
     {
-        //
+        return view('comics.create');
     }
 
     /**
@@ -48,7 +48,8 @@ class HomeController extends Controller
      */
     public function show($id)
     {
-        //
+        $comic = Comic::findOrFail($id); 
+        return view('comics.show', compact('comic'));
     }
 
     /**
