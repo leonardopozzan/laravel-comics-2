@@ -220,7 +220,7 @@ return [
         ],
         [
             "text"=> "Comics",
-            "url"=> "comics",
+            "url"=> "comics.index",
             "active"=> true,
         ],
         [
