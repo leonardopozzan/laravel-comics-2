@@ -426,10 +426,20 @@ main{
   /* Modal Content */
   .modal-content {
     background-color: #fefefe;
-    margin: auto;
+    margin: 100px auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
+    .form-delete{
+        display: inline;
+    }
+    .btn-delete{
+        border: 0;
+        background-color: #dc3545;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
   }
   
   /* The Close Button */
@@ -438,6 +448,7 @@ main{
     float: right;
     font-size: 28px;
     font-weight: bold;
+    width: max-content;
   }
   
   .close:hover,

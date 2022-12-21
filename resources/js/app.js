@@ -23,9 +23,9 @@ for(let i=0; i<btnCollection.length; i++){
 }
 
 window.onclick = function(event) {
-    if (event.target == modalCollection) {
-        for(let element of modalCollection){
-            element.style.display = "none";
+    for(let i=0; i<modalCollection.length; i++){
+        if (event.target == modalCollection[i]) {
+            modalCollection[i].style.display = "none";
         }
     }
 }

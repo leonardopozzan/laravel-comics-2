@@ -44,11 +44,11 @@ $linksImage = config('comicsdb.linksImage');
                 <div class="modal myModal">
                     <div class="modal-content">
                         <span class="close">&times;</span>
-                        <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                        <form action="{{route('comics.destroy', $comic->id)}}" method="POST" class="form-delete">
                         @csrf
                         @method('DELETE')
-                        <span>sei sicuro di elimiare {{$comic->series}}</span>
-                        <button  type="submit"><i class="fa-solid fa-trash"></i></button>
+                        <span>Sei sicuro di elimiare {{$comic->series}}?</span> 
+                        <button  type="submit" class="btn-delete">Si</button>
                         </form>
                     </div>
                 </div>
