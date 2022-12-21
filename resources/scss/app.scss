@@ -131,13 +131,18 @@ main{
                     overflow: hidden;
                     margin-bottom: 0.5rem;
                     position: relative;
-                    .edit{
+                    .edit, .delete{
                         z-index: 100;
                         position: absolute;
                         bottom: 0; right: 0;
                         color: white;
                         background-color: $blue;
                         padding: 0.5rem;
+                    }
+                    .delete{
+                        top: 0;
+                        height: max-content;
+                        border: 0;
                     }
                 }
                 

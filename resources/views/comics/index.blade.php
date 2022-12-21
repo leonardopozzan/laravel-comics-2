@@ -26,6 +26,11 @@ $linksImage = config('comicsdb.linksImage');
                         <div class="flip-card-back">
                             <a href="{{route('comics.show', ['comic'=> $comic->id])}}">
                                 <div class="img-box">
+                                    <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button class="delete bg-danger" type="submit"><i class="fa-solid fa-trash"></i></button>
+                                    </form>
                                     <img src="{{$comic['thumb']}}" alt="">
                                     <a href="{{route('comics.edit',$comic->id)}}" class="edit">Edit</a>
                                 </div>
