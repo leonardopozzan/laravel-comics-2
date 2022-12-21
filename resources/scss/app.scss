@@ -130,6 +130,15 @@ main{
                     height: 200px;
                     overflow: hidden;
                     margin-bottom: 0.5rem;
+                    position: relative;
+                    .edit{
+                        z-index: 100;
+                        position: absolute;
+                        bottom: 0; right: 0;
+                        color: white;
+                        background-color: $blue;
+                        padding: 0.5rem;
+                    }
                 }
                 
             }
@@ -185,7 +194,6 @@ main{
                 }
                 a{
                     color: grey;
-
                     &:hover{
                         color: $white;
                     }

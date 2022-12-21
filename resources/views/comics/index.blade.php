@@ -25,7 +25,10 @@ $linksImage = config('comicsdb.linksImage');
                         </div>
                         <div class="flip-card-back">
                             <a href="{{route('comics.show', ['comic'=> $comic->id])}}">
-                                <div class="img-box"><img src="{{$comic['thumb']}}" alt=""></div>
+                                <div class="img-box">
+                                    <img src="{{$comic['thumb']}}" alt="">
+                                    <a href="{{route('comics.edit',$comic->id)}}" class="edit">Edit</a>
+                                </div>
                             </a>
                             <span class="title">{{$comic['price']}}$</span>
                         </div>
